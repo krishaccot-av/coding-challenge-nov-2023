@@ -74,7 +74,9 @@
 			  <li>Provide a primary key for your data, assuring that it will increment anytime new data enters</li>
 			  <li>Display primary data. Use SELECT queries to prove you can access the data</li>
 			  <li>You may change or add new data as you please. However, please have at least 5 columns (not including the id)</li>
-			  <li>[Screenshot](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/880d6149-3880-4773-be53-ef4636dfbfe9)</li>
+			  <li>[Screenshot-SSMS-Park.json dat imported](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/a850f558-74e2-4d42-9bf7-7546b0cc7ef7)
+
+</li>
 		  </ul>
 		  <br>
           </td>
