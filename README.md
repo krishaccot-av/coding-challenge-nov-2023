@@ -74,6 +74,7 @@
 			  <li>Provide a primary key for your data, assuring that it will increment anytime new data enters</li>
 			  <li>Display primary data. Use SELECT queries to prove you can access the data</li>
 			  <li>You may change or add new data as you please. However, please have at least 5 columns (not including the id)</li>
+			  <li>[Screenshot](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/880d6149-3880-4773-be53-ef4636dfbfe9)</li>
 		  </ul>
 		  <br>
           </td>
@@ -112,6 +113,12 @@
                     <li>DAO Layer (for repositories)</li>
                     <li>Service Layer</li>
                     <li>Controller Layer (Use provided folders to create needed files - not including DTOs)</li>
+			<li style='color:red'>[Screenshot-GetAllParks](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/68308ab0-d798-4075-afc0-e5db21de0abc)
+</li>
+			<li>[Screenshot-GetParkById](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/c266f205-6f59-41ba-aef6-c2d4d977ba25)
+</li>
+			<li>[Screenshot-GetParkByFullName](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/809d603b-2a2d-4534-8de9-771732020855)
+</li>
                 </ul>
 		  <div>NOTE: Try to use Spring Boot's built-in methods to complete the mapping. You likely will not need to create custom SQL queries.</div>
 		  <br>
@@ -151,6 +158,12 @@
                     <li>Certain programming languages have different approaches when building these out (JPA Repository in Java, EF Core in C#), so try to follow their conventions</li>
 			<li>Use Provided folders to created needed files (not including DTOs)</li>
 			<li>Use screenshots of <a href="https://www.postman.com/" target="_blank">Postman</a> responses to prove your functionality</li>
+			<li>[Screenshot-DeleteParkById](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/21e2048e-3bfe-457b-9874-46ba8b40fd30)
+</li>
+			<li>[Screenshot-CreatePark(POST)](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/64c88711-70cb-4958-8f1e-eda57e8d9a15)
+</li>
+			<li>[Screenshot-UpdatePark(PUT)](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/d021f0a4-744a-4b08-9b9b-308136a99d63)
+</li>
                 </ul>
 		  <br>
 		  <div>NOTE: Try to use Spring Boot's built-in methods to complete the mapping. You likely will not need to create custom SQL queries.</div>
@@ -189,6 +202,10 @@
 			 <li>Make modifications to your current code when needed</li>
 			 <li>Use Provided folders to created needed files (not including DTOs)</li>
 		         <li>Use screenshots of <a href="https://www.postman.com/" target="_blank">Postman</a> responses to prove your functionality</li>
+			 <li>[Screenshot-GetActivitiesByParkId](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/73b48eea-4f45-4705-95aa-b7062708eb67)
+</li>
+			 <li>[Screenshot-GetParksHavingSpecificActivity](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/6dca7347-ea37-40bd-84a3-a3eb930598b5)
+</li>
                 </ul>
 		  <br>
 		  <div>NOTE: For complex database calls, you may have to create custom SQL queries within your repos. However, challenge yourself by using Spring Boot's built-in methods to complete your mappings until its needed</div>
@@ -218,6 +235,10 @@
                     <li>Establish complex mappings that lean on their new relationships between tables in the database</li>
 		    <li>Use Provided folders to created needed files (not including DTOs)</li>
 		    <li>Use screenshots of <a href="https://www.postman.com/" target="_blank">Postman</a> responses to prove your functionality</li>
+			<li>[Screenshot-GetParksByActivityId](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/675225e2-abcc-4ecc-a923-f4884b613196)
+</li>
+			<li>[Screenshot-GetActivitesByParkId](https://github.com/krishaccot-av/coding-challenge-nov-2023/assets/117759966/1631cf97-7290-4f11-8971-7134260a577f)
+</li>
                 </ul>
 		  <br>
           </td>
