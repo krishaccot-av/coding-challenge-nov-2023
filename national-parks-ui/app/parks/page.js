@@ -1,16 +1,21 @@
+'use client';
 import Link from "next/link";
-async function fetchParks()
+import { useSearchParams } from 'next/navigation'
+import { useEffect,useState,router } from "react";
+
+export default function Page()
 {
-    const res = await fetch('http://localhost:3000/parks/api');
-    const data = await res.json()
-    debugger;
-    return data;
-}
-export default async function Page()
-{
-    const data = await fetchParks();
+  debugger;
+  const searchParams = useSearchParams()
+  const search = searchParams.get('search')
+  const [data,setData] = useState(null);
+  useEffect(()=>{
+    fetch(`http://localhost:3000/parks/api?search=${search}`, { cache: 'no-store' })
+    .then((res)=>res.json())
+    .then((d)=>{setData(d);});    
+  },[search]);
     return(
-        <><table className="table">
+        <><table className="table" role="heading">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -20,14 +25,14 @@ export default async function Page()
           </tr>
         </thead>
         <tbody>
-            {data.data.data.map((d,index)=>
+            {data?data.data.data.map((d,index)=>
           <tr key={d.id||''}>
             <th scope="row">{index+1}</th>
             <td><Link href={`/parks/${d.parkCode}`}>{d.fullName}</Link></td>
             <td>{d.parkCode}</td>
             <td>{d.description}</td>
           </tr>)
-        }
+        :null}
           
         </tbody>
       </table></>)

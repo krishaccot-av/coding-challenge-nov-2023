@@ -11,8 +11,7 @@ export default function Page({params})
   const [isMapOpen,setIsMapOpen] = useState(false);
   const [lat,setLat] = useState(55.8271775);
   const [lng,setLng] = useState(20.742731);
-  useEffect(()=>{
-    let d ; 
+  useEffect(()=>{    
     fetch(`http://localhost:3000/parks/api/${params.dpark}`)
     .then((res)=>res.json())
     .then((d)=>{setData(d);});    
@@ -26,7 +25,7 @@ export default function Page({params})
       const toggleMap = (flag)=>{
         setIsMapOpen(flag);};
     return(
-      <div className={"card m-2 p-2"}>
+      <div className={"card m-2 p-2"} role="container">
       {data?data.data.data.map(({ id, fullName, images, description,latitude,longitude }) => (
         <><div className={"row"}>
           <div className={"col"}><h3 >{fullName}</h3></div>
