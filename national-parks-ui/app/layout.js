@@ -1,6 +1,6 @@
 'use client';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Inter } from 'next/font/google'
+import { Inter, ico } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head';
 import Link from "next/link";
@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
     if (key === "Enter") {
       if(query.length>0)
       {
-        debugger;
         const redirectPath = `/parks?search=${query}`;
         setQuery('');
         router.push(redirectPath);
@@ -43,7 +42,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head metadata></Head>
+      <Head metadata={metadata}></Head>
       <body className={inter.className} >
         <div className="container-fluid" data-cy-root>
           <div className="row bg-light border-bottom border-info">
