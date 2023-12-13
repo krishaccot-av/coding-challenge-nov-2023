@@ -9,7 +9,7 @@ export default function Page() {
   const lat = searchParams.get('lat')
   const lng = searchParams.get('lng')
 
-  const googleMapsKey = process.env.MAP_API_KEY;
+  const googleMapsKey = 'AIzaSyA-mBU9gZWQGIEL9FdA3UKybeKiqEJI6EE';//process.env.MAP_API_KEY;
   const StreetMapOptions = {
     position: { lat: lat, lng: lng },
     pov: { heading: 100, pitch: 0 },
